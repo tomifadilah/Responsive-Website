@@ -1,0 +1,853 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+
+/* navigation style */
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+.navigation .box-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .box-navigation .box:nth-child(1) img {
+    width: 90%;
+}
+
+.navigation .box-navigation .box:nth-child(3) ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .box-navigation .box:nth-child(3) ul li {
+    margin-left: 40px;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.navigation .box-navigation .box:nth-child(3) ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.navigation .box-navigation .box:nth-child(3) ul li a:hover {
+    color: #5D77FF;
+    transition: all .3s ease-in-out;
+}
+
+.navigation .box-navigation .box:nth-child(2) {
+    display: none;
+
+}
+
+.navigation .box-navigation .box:nth-child(3) ul li i {
+    display: none;
+}
+/* navigation style */
+
+/*--- === 1 ads style === ---*/
+.ads {
+    height: auto;
+    margin-bottom: 34px;
+}
+
+.ads .box-ads img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*--- === 1 ads style === ---*/
+
+/* best seller style */
+.best {
+    display: flex;
+    align-items: center;
+    height: 220px;
+    width: 100%;
+    margin-bottom: 34px;
+}
+
+.best .box-best {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.box-best .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.best .box-best img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    color: #f1f1f1;
+    box-shadow: 1px 2px 8px;
+    cursor: pointer;
+}
+
+.best .box-best h1 {
+    font-size: 16px;
+    padding: 8px;
+    font-weight: 600;
+    width: auto;
+    cursor: pointer;
+}
+
+.best .box-best .box:nth-child(1) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.best .box-best .box.box:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.best .box-best .box.box:nth-child(3) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.best .box-best .box.box:nth-child(4) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* best seller style */
+
+/*  night discount style */
+.disc .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.disc .box .box:nth-child(1) h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.disc .box .box:nth-child(1) p {
+    color: red;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 12px;
+}
+
+.disc .box .box:nth-child(2) h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #5D77FF;
+    cursor: pointer;
+}
+/*  night discount style */
+
+/*--- === mobile === ---*/
+.mnight-disc {
+    display: none;
+}
+/*--- === mobile === ---*/
+
+/* product Night Discount Style */
+.night-discount {
+    height: auto;
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+
+.night-disc {
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+.night-disc .content {
+    width: 1090px;
+    height: 450px;
+}
+
+.content .card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    border-radius: 4px;
+    text-align: center;
+    outline: #fafafa;
+    outline-style: auto;
+    cursor: pointer;
+}
+
+.content .card:hover {
+    scale: 98%;
+    transition: all .3s ease-in;
+}
+
+
+.night-disc .content .images img {
+    width: 200px;
+    height: 100%;
+    border-radius: 4px;
+    position: center;
+    object-fit: cover;
+}
+
+.content .card h1 {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 8px 4px 8px;
+}
+
+.content .card h2 {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0px 8px 18px 8px;
+}
+
+.content .discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content .card h3 {
+    color: rgb(138, 138, 138);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 2px 4px 8px;
+    text-decoration: line-through;
+}
+
+.content .card h4 {
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 8px 4px 2px;
+}
+
+.content .card p {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 8px 0px 8px;
+}
+/* product Night Discount Style */
+
+/*--- ====== ads-brand ====== ---*/
+.ads-brand {
+    align-items: center;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.banner-ads-brand {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.banner-ads-brand .banner-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-1 .box-1 {
+    padding-right: 22px;
+}
+
+.banner-ads-brand .banner-2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 34px;
+}
+
+.banner-2 .box-4 {
+    padding-left: 22px;
+}
+
+.banner-ads-brand img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    position: center;
+    object-fit: cover;
+}
+
+/*--- === 2 ads style === ---*/
+.adss {
+    height: auto;
+    margin-bottom: 34px;
+}
+
+.adss .box-ads img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*--- === 2 ads style === ---*/
+
+/*--- ====== long banner style ====== ---*/
+.long-banner {
+    position: relative;
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    margin-inline: auto;
+    bottom: 4px;
+}
+
+.long-banner .banner {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+}
+
+.banner .box {
+    width: 100%;
+    height: 100%;
+}
+
+.long-banner img {
+    width: 100%;
+    height: 290px;
+    border-radius: 4px;
+    cursor: pointer;
+    object-fit: cover;
+}
+/*--- ====== long banner style ====== ---*/
+
+/*--- ==== Discount Show style ==== ---*/
+.disc-show .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.disc-show .box .box-disc h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.disc-show .box .box-show h2 {
+    color: #5D77FF;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*--- ==== Discount Show style ==== ---*/
+
+/*--- ==== new banner style ==== ---*/
+.new-banner {
+    width: 100%;
+    height: auto;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.box-banner {
+    width: 100%;
+    height: auto;
+}
+
+.box-banner img {
+    width: 100%;
+    height: 290px;
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.box-new-banner-1 {
+    margin-bottom: 34px;
+}
+
+.box-new-banner-2 {
+    margin-bottom: 34px;
+}
+/*--- ==== new banner style ==== ---*/
+
+/*--- ==== title end ==== ---*/
+.title-end {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.text-end {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.text-end h1 {
+    font-size: 16px;
+    color: rgb(138, 138, 138);
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.text-end p {
+    font-size: 14px;
+    color: rgb(138, 138, 138);
+    opacity: 0.8;
+}
+
+/*--- ==== title end ==== ---*/
+
+
+@media screen and (max-width: 500px) {
+
+    .navigation {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 44px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) {
+    display: inline-block;
+    }
+
+    .navigation .box-navigation .box:nth-child(2) i {
+    font-size: 18px;
+    color:#000;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 4%;
+    width: 110px;
+    background-color: white;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.navigation .box-navigation .menu-navigation.menu-active {
+    opacity: 1;
+    top: 30px;
+}
+
+.navigation .box-navigation .box:nth-child(1) img {
+    width: 65%;
+}
+
+.navigation .box-navigation .box:nth-child(3) ul {
+    flex-direction: column;
+}
+
+.navigation .box-navigation .box:nth-child(3) ul li {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.navigation .box-navigation .box:nth-child(3) ul li i {
+    margin-inline: 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.navigation .box-navigation .box:nth-child(3) ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/*--- === 1 ads style === ---*/
+.ads {
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.ads .box-ads .box img {
+    border-radius: 8px;
+}
+/*--- === 1 ads style === ---*/
+
+/*--- === 2 ads style === ---*/
+.adss {
+    height: auto;
+    margin-bottom: 14px;
+}
+
+.adss .box-ads img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*--- === 2 ads style === ---*/
+
+/* --- === best === ---*/
+.best {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 77px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.best .box-best {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    justify-content: center;
+}
+
+.box-best .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.best .box-best img {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.best .box-best h1 {
+    font-size: 10px;
+    padding: 4px;
+    width: auto;
+    font-weight: 400;
+}
+/* --- === best === ---*/
+
+/*  night discount */
+.disc .box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.disc .box .box:nth-child(1) h1 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.disc .box .box:nth-child(1) p {
+    color: red;
+    font-weight: 600;
+    font-size: 10px;
+    padding-left: 8px;
+}
+
+.disc .box .box:nth-child(2) h2 {
+    font-size: 10px;
+    font-weight: 500;
+    color: #5D77FF;
+}
+/*  night discount */
+
+.night-discount {
+    display: none;
+}
+
+/* product Night Discount Style */
+.mnight-disc {
+    position: relative;
+    display: flex;
+    height: 260px;
+    width: 100%;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    justify-content: center;
+}
+
+.mnight-disc .content {
+    width: 312px;
+    height: 100%;
+}
+
+.content .card {
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    height: 248px;
+    border-radius: 4px;
+    text-align: center;
+    outline: #fafafa;
+    outline-style: auto;
+}
+
+.content .images img {
+    width: 110px;
+    height: 100%;
+    border-radius: 4px;
+    position: center;
+    object-fit: cover;
+}
+
+.content .card h1 {
+    color: black;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 4px 2px 4px;
+}
+
+.content .card h2 {
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0px 4px 12px 4px;
+}
+
+.content .card h3 {
+    color: rgb(138, 138, 138);
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0px 2px 4px 8px;
+    text-decoration: line-through;
+}
+
+.content .card h4 {
+    color: red;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0px 8px 4px 2px;
+}
+
+.content .card p {
+    color: black;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 0px 4px 8px 4px;
+    bottom: 0px;
+}
+
+/* product Night Discount Style */
+
+/*--- ==== Discount Show style ==== ---*/
+.disc-show .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 4px;
+}
+
+.disc-show .box .box-disc h1 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.disc-show .box .box-show h2 {
+    color: #5D77FF;
+    font-weight: 500;
+    font-size: 10px;
+}
+/*--- ==== Discount Show style ==== ---*/
+
+/*--- ====== ads-brand ====== ---*/
+.ads-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.banner-ads-brand {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.banner-ads-brand .banner-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-1 .box-1 {
+    padding-right: 12px;
+}
+
+.banner-ads-brand .banner-2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+
+.banner-2 .box-4 {
+    padding-left: 12px;
+}
+
+.banner-ads-brand img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    position: center;
+    object-fit: cover;
+}
+/*--- ====== ads-brand ====== ---*/
+
+/*--- ====== long banner style ====== ---*/
+.long-banner {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+.long-banner .banner .box {
+    display: flex;
+    flex-direction: row;
+    height: 114px;
+    width: 100%;
+}
+
+.banner .box {
+    width: 100%;
+    height: 20px;
+}
+
+.long-banner img {
+    width: 100%;
+    height: 80px;
+    border-radius: 4px;
+    position: center;
+    object-fit: cover;
+}
+/*--- ====== long banner style ====== ---*/
+
+/*--- ==== new banner style ==== ---*/
+.new-banner {
+    width: 100%;
+    height: auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.box-banner {
+    width: 100%;
+    height: auto;
+}
+
+.box-banner img {
+    width: 100%;
+    height: 80px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.box-new-banner-1 {
+    margin-bottom: 12px;
+}
+
+.box-new-banner-2 {
+    margin-bottom: 12px;
+}
+/*--- ==== new banner style ==== ---*/
+
+/*--- ==== title end ==== ---*/
+.title-end {
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+}
+
+.text-end {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.text-end h1 {
+    font-size: 10px;
+    color: rgb(138, 138, 138);
+    padding-bottom: 4px;
+    font-weight: 600;
+}
+
+.text-end p {
+    font-size: 10px;
+    color: rgb(138, 138, 138);
+    opacity: 0.8;
+}
+/*--- ==== title end ==== ---*/
+
+}
